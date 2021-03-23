@@ -1,0 +1,379 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: #4b5862;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Overpass", sans-serif;
+}
+
+h2,
+h5 {
+  color: white;
+}
+
+h1,
+h4 {
+  color: #1f3f5b;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bg-hero {
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  border-bottom-left-radius: 100px;
+}
+@media screen and (min-width: 576px) {
+  .bg-hero {
+    border-bottom-left-radius: 50px;
+  }
+}
+.bg-hero .container-fluid h1 {
+  color: white;
+  font-size: 1.55rem;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 576px) {
+  .bg-hero .container-fluid h1 {
+    font-size: 3.5rem;
+    padding-top: 70px;
+    padding-bottom: 5px;
+  }
+}
+.bg-hero .container-fluid p {
+  color: #c8c8cb;
+  font-size: 0.85rem;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .bg-hero .container-fluid p {
+    font-size: 1.05rem;
+  }
+}
+.bg-hero .container-fluid .btn-group {
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 576px) {
+  .bg-hero .container-fluid .btn-group {
+    padding-bottom: 120px;
+  }
+}
+
+#blogrExample {
+  background: white;
+}
+@media screen and (min-width: 576px) {
+  #blogrExample {
+    background: transparent;
+  }
+}
+
+nav,
+.btn-group {
+  font-size: 0.65rem;
+}
+@media screen and (min-width: 576px) {
+  nav,
+.btn-group {
+    font-size: 0.95rem;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/icon-hamburger.svg");
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-right: 0;
+}
+@media screen and (min-width: 576px) {
+  .navbar-brand {
+    margin-right: 40px;
+    font-size: 2.5rem;
+  }
+}
+
+.nav-item .nav-link {
+  color: black;
+}
+@media screen and (min-width: 576px) {
+  .nav-item .nav-link {
+    color: white;
+  }
+}
+
+.dropdown .dropdown-item:hover {
+  font-weight: 700;
+  background: transparent;
+}
+
+nav .btn-group button:first-of-type {
+  background-color: inherit;
+  color: black;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+@media screen and (min-width: 576px) {
+  nav .btn-group button:first-of-type {
+    color: white;
+  }
+}
+nav .btn-group button:first-of-type:hover {
+  background-color: #ff7a85;
+}
+
+nav .btn-group button:last-of-type {
+  background-color: white;
+  color: #ff525d;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+nav .btn-group button:last-of-type:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.container-fluid .btn-group button:first-of-type {
+  background-color: white;
+  color: #ff525d;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.container-fluid .btn-group button:first-of-type:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.container-fluid .btn-group button:last-of-type {
+  background-color: inherit;
+  color: white;
+  border-color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.container-fluid .btn-group button:last-of-type:hover {
+  background-color: white;
+  color: #ff7a85;
+}
+
+.illustration-editor,
+.illustration-laptop {
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom: 200px;
+}
+@media screen and (min-width: 576px) {
+  .illustration-editor,
+.illustration-laptop {
+    margin-top: 90px;
+    margin-bottom: 200px;
+  }
+}
+.illustration-editor h1,
+.illustration-laptop h1 {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 576px) {
+  .illustration-editor h1,
+.illustration-laptop h1 {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .illustration-editor .col-12:first-of-type,
+.illustration-laptop .col-12:first-of-type {
+    margin-bottom: 70px;
+  }
+}
+.illustration-editor h4,
+.illustration-laptop h4 {
+  text-align: center;
+  font-size: 1.95rem;
+}
+@media screen and (min-width: 576px) {
+  .illustration-editor h4,
+.illustration-laptop h4 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+.illustration-editor p,
+.illustration-laptop p {
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+@media screen and (min-width: 576px) {
+  .illustration-editor p,
+.illustration-laptop p {
+    line-height: 1.8;
+    text-align: left;
+    letter-spacing: 0;
+  }
+}
+
+.illustration-editor .col-md-6 {
+  position: static;
+}
+@media screen and (min-width: 576px) {
+  .illustration-editor .col-md-6 {
+    position: relative;
+  }
+  .illustration-editor .col-md-6 picture,
+.illustration-editor .col-md-6 source,
+.illustration-editor .col-md-6 img {
+    position: absolute;
+    top: -120px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .illustration-laptop .col-md-6 {
+    position: relative;
+  }
+  .illustration-laptop .col-md-6 picture,
+.illustration-laptop .col-md-6 source,
+.illustration-laptop .col-md-6 img {
+    height: 786px;
+    position: absolute;
+    top: -95px;
+    right: 0;
+  }
+}
+
+.phones {
+  background: linear-gradient(to right, #2c2d3f, #3f4164);
+  color: white;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+@media screen and (min-width: 576px) {
+  .phones {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+}
+.phones img {
+  position: relative;
+  top: -50%;
+}
+@media screen and (min-width: 576px) {
+  .phones img {
+    top: -60px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .phones {
+    margin-bottom: 250px;
+    height: 420px;
+  }
+}
+.phones .row div:first-of-type {
+  height: 380px;
+}
+@media screen and (min-width: 576px) {
+  .phones .row div:first-of-type {
+    height: inherit;
+  }
+}
+@media screen and (min-width: 576px) {
+  .phones .row div:last-of-type {
+    padding-top: 130px;
+    padding-bottom: 0px;
+  }
+}
+.phones h4 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 576px) {
+  .phones h4 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+.phones p {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  color: #c8c8cb;
+}
+@media screen and (min-width: 576px) {
+  .phones p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #25252d;
+  color: #c8c8cb;
+  border-top-right-radius: 50px;
+}
+@media screen and (min-width: 576px) {
+  footer {
+    text-align: left;
+    border-top-right-radius: 100px;
+  }
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+footer h5 {
+  font-size: 1rem;
+}
+@media screen and (min-width: 576px) {
+  footer h5 {
+    font-size: 1rem;
+  }
+}
+footer li {
+  color: #c8c8cb;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 576px) {
+  footer li {
+    font-size: 0.9rem;
+  }
+}

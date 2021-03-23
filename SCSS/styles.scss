@@ -1,0 +1,410 @@
+@import "variables";
+@import "mixins";
+
+@include mQ(576px) {}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $fontSize;
+    font-family: $bodyFontTwo;
+    color: $verydarkgrayishbluebodycopy;
+    font-weight: 400;
+    scroll-behavior: smooth;
+
+
+}
+
+//reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+    {
+    font-family: $bodyFontOne;
+}
+
+h2,
+h5 {
+    color: $whitetext;
+}
+
+h1,
+h4 {
+    color: $verydarkblueheadings;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bg-hero {
+    background: linear-gradient(to right, $verylightred, $lightred);
+
+    @include mQ(576px) {
+        border-bottom-left-radius: 50px;
+    }
+
+    border-bottom-left-radius: 100px;
+
+    .container-fluid h1 {
+        color: $whitetext;
+        font-size: 1.55rem;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 5px;
+
+        @include mQ(576px) {
+            font-size: 3.5rem;
+            padding-top: 70px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .container-fluid p {
+        color: $grayishbluefootertext;
+        font-size: 0.85rem;
+        text-align: center;
+
+        @include mQ(576px) {
+            font-size: 1.05rem;
+        }
+    }
+
+    .container-fluid {
+
+        .btn-group {
+            padding-bottom: 100px;
+
+            @include mQ(576px) {
+                padding-bottom: 120px;
+            }
+        }
+    }
+}
+
+#blogrExample {
+    background: $whitetext;
+
+    @include mQ(576px) {
+        background: transparent;
+    }
+}
+
+nav,
+.btn-group {
+    @include mQ(576px) {
+        font-size: 0.95rem;
+    }
+
+    font-size: 0.65rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../images/icon-hamburger.svg');
+}
+
+.navbar-brand {
+    color: $whitetext;
+    font-weight: 700;
+    font-family: $bodyFontTwo;
+    font-size: 2rem;
+    color: $whitetext;
+    margin-right: 0;
+
+    @include mQ(576px) {
+        margin-right: 40px;
+        font-size: 2.5rem;
+    }
+
+}
+
+.nav-item .nav-link {
+    color: black;
+
+    @include mQ(576px) {
+        color: $whitetext;
+    }
+
+}
+
+.dropdown .dropdown-item {
+
+    &:hover {
+        font-weight: 700;
+        background: transparent;
+    }
+
+}
+
+nav .btn-group button:first-of-type {
+    background-color: inherit;
+    color: black;
+
+    @include mQ(576px) {
+        color: $whitetext;
+        ;
+    }
+
+    font-weight: 700;
+    font-size: 0.85rem;
+
+    &:hover {
+        background-color: $lightredCTAhoverbackground;
+    }
+}
+
+nav .btn-group button:last-of-type {
+    background-color: $whitetext;
+    color: $lightredCTA;
+    font-weight: 700;
+    font-size: 0.85rem;
+
+    &:hover {
+        background-color: $lightredCTAhoverbackground;
+        color: $whitetext;
+    }
+}
+
+.container-fluid .btn-group button:first-of-type {
+    background-color: $whitetext;
+    color: $lightredCTA;
+    font-weight: 700;
+    font-size: 0.75rem;
+
+    &:hover {
+        background-color: $lightredCTAhoverbackground;
+        color: $whitetext;
+    }
+}
+
+.container-fluid .btn-group button:last-of-type {
+    background-color: inherit;
+    color: $whitetext;
+    border-color: $whitetext;
+    font-weight: 700;
+    font-size: 0.75rem;
+
+    &:hover {
+        background-color: $whitetext;
+        color: $lightredCTAhoverbackground;
+    }
+}
+
+.illustration-editor,
+.illustration-laptop {
+    overflow: hidden;
+    margin-top: 70px;
+    margin-bottom: 200px;
+
+    @include mQ(576px) {
+        margin-top: 90px;
+        margin-bottom: 200px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+        @include mQ(576px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    .col-12:first-of-type {
+        @include mQ(576px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.95rem;
+
+        @include mQ(576px) {
+            font-size: 1.4rem;
+            text-align: left;
+
+        }
+    }
+
+    p {
+        text-align: center;
+        letter-spacing: 0.8px;
+
+        @include mQ(576px) {
+            line-height: 1.8;
+            text-align: left;
+            letter-spacing: 0;
+
+        }
+    }
+}
+
+.illustration-editor .col-md-6 {
+    position: static;
+
+    @include mQ(576px) {
+        position: relative;
+
+        picture,
+        source,
+        img {
+
+            position: absolute;
+            top: -120px;
+            left: 0;
+
+        }
+    }
+}
+
+.illustration-laptop .col-md-6 {
+    @include mQ(576px) {
+        position: relative;
+
+        picture,
+        source,
+        img {
+            height: 786px;
+            position: absolute;
+            top: -95px;
+            right: 0;
+
+        }
+    }
+}
+
+.phones {
+    background: linear-gradient(to right, $verydarkgrayblue, $verydarkdesaturatedblue);
+
+    color: $whitetext;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    @include mQ(576px) {
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    img {
+        position: relative;
+        top: -50%;
+
+        @include mQ(576px) {
+
+            top: -60px;
+        }
+
+    }
+
+    @include mQ(576px) {
+        margin-bottom: 250px;
+        height: 420px;
+
+    }
+
+    .row div {
+        &:first-of-type {
+            height: 380px;
+
+            @include mQ(576px) {
+                height: inherit;
+
+            }
+        }
+
+        &:last-of-type {
+
+            @include mQ(576px) {
+                padding-top: 130px;
+                padding-bottom: 0px;
+
+            }
+        }
+
+    }
+
+    h4 {
+        color: $whitetext;
+        text-align: center;
+        font-size: 2.5rem;
+
+        @include mQ(576px) {
+            font-size: 2rem;
+            text-align: left;
+
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 0.8px;
+        color: $grayishbluefootertext;
+
+        @include mQ(576px) {
+            font-size: 0.95rem;
+
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            text-align: left;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+
+    @include mQ(576px) {
+        text-align: left;
+        border-top-right-radius: 100px;
+    }
+
+    background-color: $verydarkblackbluefooterbackground;
+    color: $grayishbluefootertext;
+    border-top-right-radius:50px;
+
+    h2 {
+        font-weight: 600;
+        font-size: 2.5rem;
+
+        @include mQ(576px) {}
+    }
+
+    h5 {
+        @include mQ(576px) {
+            font-size: 1rem;
+        }
+
+        font-size:1rem;
+    }
+
+    li {
+        color: $grayishbluefootertext;
+
+        @include mQ(576px) {
+            font-size: 0.9rem;
+        }
+
+        font-size:0.9rem;
+    }
+}
